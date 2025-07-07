@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Equation Smackdown</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🔬 Main Game Interface -->
+  <div class="game-container">
+    <h1>⚡ Equation Smackdown ⚡</h1>
+    <p id="character-face">🧠 vs 🐙</p>
+    <p id="question">Loading question...</p>
+    <div id="answers"></div>
+    <p id="feedback"></p>
+    <p id="lives">Lives: ❤️❤️❤️</p>
+    <p id="score">Score: 0 | High Score: 0</p>
+    <p id="timer">Time left: 15s</p>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <!-- 💀 Game Over Section -->
+  <div id="game-over" style="display: none;">
+    <h2>💀 GAME OVER 💀</h2>
+    <p>You lost all your lives!</p>
+    <p>Final Score: <span id="final-score"></span></p>
+    <p>High Score: <span id="final-high-score"></span></p>
+    <button onclick="resetGame()">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
